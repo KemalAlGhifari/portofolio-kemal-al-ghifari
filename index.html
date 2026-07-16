@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of Kemal Al Ghifari - Full Stack Developer">
+    <meta property="og:title" content="Kemal Al Ghifari | Portfolio">
+    <meta property="og:description" content="Professional Full Stack Developer Portfolio">
+    <meta property="og:type" content="website">
+    <title>Portfolio | Modern & Elegant</title>
+    <!-- Favicon placeholder -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤓</text></svg>">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Portfo<span>lio.</span></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-sun"></i> <!-- Default to dark mode toggle symbol to switch to light -->
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <h3 class="hero-subtitle">Hello, I'm</h3>
+                    <h1 class="hero-title">Kemal <span class="accent">Al Ghifari</span></h1>
+                    <h2 class="hero-job">
+                        And I'm a <span class="typing-text"></span>
+                    </h2>
+                    <p class="hero-desc">
+                        Full Stack Developer with 2+ years of experience in mobile and backend development. Skilled in
+                        building scalable applications using Flutter, NestJS, ASP.NET, and microservices architecture.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary ripple-btn">Contact Me</a>
+                        <a href="#" class="btn btn-outline ripple-btn">Download CV <i class="fas fa-download"></i></a>
+                    </div>
+                    <div class="social-icons mt-4">
+                        <a href="https://github.com/kemal" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kemalalghifari" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:kmlalgh@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-img reveal">
+                    <div class="img-box">
+                        <!-- Placeholder Profile Image -->
+                        <img src="image/profile.jpeg" alt="Profile Picture" loading="lazy">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>About <span class="accent">Me</span></h2>
+                    <p>Discover more about my professional background and journey</p>
+                </div>
+
+                <div class="about-container">
+                    <div class="about-text reveal">
+                        <h3>Experienced Full Stack Developer</h3>
+                        <p>I am a highly motivated developer with over 2 years of experience in mobile and backend
+                            development. I specialize in building scalable applications using frameworks like Flutter,
+                            NestJS, and ASP.NET along with microservices architectures.</p>
+                        <p>My expertise includes developing REST APIs, real-time tracking systems, and CMS platforms. I
+                            have strong problem-solving skills and experience in end-to-end development and system
+                            integration in cross-functional teams.</p>
+                    </div>
+
+                    <div class="about-stats reveal">
+                        <div class="stat-box">
+                            <h3 class="counter" data-target="2">0</h3>
+                            <span>+</span>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3 class="counter" data-target="15">0</h3>
+                            <span>+</span>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3 class="counter" data-target="20">0</h3>
+                            <p>Technologies Mastered</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3 class="counter" data-target="5">0</h3>
+                            <p>Companies Worked With</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding bg-alt">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>My <span class="accent">Skills</span></h2>
+                    <p>Technologies and tools I use to build amazing products</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-card glass reveal">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript / Dart</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="90%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PHP / .NET</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="85%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Golang</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="70%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-card glass reveal">
+                        <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Frameworks</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>NestJS / Laravel</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="85%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Flutter</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="90%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>ASP.NET / ReactJS</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="80%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & DB -->
+                    <div class="skill-card glass reveal">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend & DB</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>REST API / Microservices</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="95%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MySQL / MariaDB</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="85%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL Server</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="80%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card glass reveal">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="90%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Postman</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="85%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Visual Studio Code</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-line"><span data-width="95%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-padding">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>My <span class="accent">Experience</span></h2>
+                    <p>My professional journey and career milestones</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- PT KarpaLabs -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <h3 class="timeline-title">Full Stack Developer</h3>
+                            <div class="timeline-company">PT KarpaLabs</div>
+                            <div class="timeline-date"><i class="far fa-calendar-alt"></i> Nov 2025 - Present</div>
+                            <div style="margin-top: 10px;">
+                                <strong>Enterprise Approval System (Pertamina Project)</strong>
+                                <ul style="padding-left: 1.5rem; margin-top: 0.5rem; list-style-type: disc;">
+                                    <li>Developed REST APIs using Laravel Lumen with microservices architecture</li>
+                                    <li>Implemented SLA (Service Level Agreement) logic for approval workflows</li>
+                                    <li>Integrated multiple backend services to support complex business processes</li>
+                                    <li>Improved system scalability and maintainability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TemuIde -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <h3 class="timeline-title">Backend Developer</h3>
+                            <div class="timeline-company">TemuIde (CMS Platform)</div>
+                            <div class="timeline-date"><i class="far fa-calendar-alt"></i> Jun 2025 - Nov 2025</div>
+                            <p>Built backend system using NestJS and TypeScript. Designed modular and reusable
+                                architecture. Implemented RBAC and integrated system with MariaDB.</p>
+                        </div>
+                    </div>
+
+                    <!-- Freelance Web Developer -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <h3 class="timeline-title">Freelance Web Developer</h3>
+                            <div class="timeline-company">JCC Support System</div>
+                            <div class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2025 - Apr 2025</div>
+                            <ul style="padding-left: 1.5rem; margin-top: 10px; list-style-type: disc;">
+                                <li>Developed web platform using Laravel</li>
+                                <li>Converted manual Excel system into web-based application</li>
+                                <li>Built member management and contribution system</li>
+                                <li>Implemented admin approval workflow</li>
+                                <li>Created CMS-based dynamic landing page</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- KarpaLabs Projects -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <h3 class="timeline-title">Mobile Developer</h3>
+                            <div class="timeline-company">KarpaLabs Projects</div>
+                            <div class="timeline-date"><i class="far fa-calendar-alt"></i> Oct 2024 - Apr 2025</div>
+                            <div style="margin-top: 10px;">
+                                <strong>Blind Learning App</strong> <span style="font-size: 0.9em; opacity: 0.8;">(Dec
+                                    2024 - Feb 2025)</span>
+                                <ul
+                                    style="padding-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 15px; list-style-type: disc;">
+                                    <li>Developed accessible mobile app using Flutter</li>
+                                    <li>Integrated TalkBack for visually impaired users</li>
+                                    <li>Built features for learning modules, payments, and donations</li>
+                                    <li>Implemented progress tracking system</li>
+                                </ul>
+                                <strong>Tracking Delivery App</strong>
+                                <ul style="padding-left: 1.5rem; margin-top: 0.5rem; list-style-type: disc;">
+                                    <li>Rebuilt mobile app using Flutter</li>
+                                    <li>Implemented real-time location tracking system</li>
+                                    <li>Improved app performance and user experience</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HRMS (Quilla) -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <h3 class="timeline-title">Product Owner</h3>
+                            <div class="timeline-company">HRMS (Quilla)</div>
+                            <div class="timeline-date"><i class="far fa-calendar-alt"></i> Sep 2024 - Oct 2024</div>
+                            <ul style="padding-left: 1.5rem; margin-top: 10px; list-style-type: disc;">
+                                <li>Defined product requirements for HR system (attendance & payroll)</li>
+                                <li>Collaborated with developers to align technical and business needs</li>
+                                <li>Managed product roadmap and feature prioritization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Finance Consolidation -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <h3 class="timeline-title">Full Stack Developer</h3>
+                            <div class="timeline-company">Finance Consolidation (Jababeka)</div>
+                            <div class="timeline-date"><i class="far fa-calendar-alt"></i> Sep 2024 - Oct 2024</div>
+                            <ul style="padding-left: 1.5rem; margin-top: 10px; list-style-type: disc;">
+                                <li>Built financial reporting system using ASP.NET and Kendo UI</li>
+                                <li>Developed features for monthly & yearly reporting</li>
+                                <li>Implemented Excel import/export functionality</li>
+                                <li>Automated data calculations for financial analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- SnSmoos -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <h3 class="timeline-title">Full Stack Developer</h3>
+                            <div class="timeline-company">SnSmoos (School System)</div>
+                            <div class="timeline-date"><i class="far fa-calendar-alt"></i> Feb 2024 - Apr 2024</div>
+                            <ul style="padding-left: 1.5rem; margin-top: 10px; list-style-type: disc;">
+                                <li>Built attendance and school monitoring system</li>
+                                <li>Developed online/offline payment features</li>
+                                <li>Created digital report system for parents and teachers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- PT Sada Technology -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <h3 class="timeline-title">Mobile iOS Developer</h3>
+                            <div class="timeline-company">PT Sada Technology</div>
+                            <div class="timeline-date"><i class="far fa-calendar-alt"></i> Aug 2023 - Jan 2024</div>
+                            <ul style="padding-left: 1.5rem; margin-top: 10px; list-style-type: disc;">
+                                <li>Developed HRMS mobile application using Flutter</li>
+                                <li>Focused on iOS platform implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding bg-alt">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Featured <span class="accent">Projects</span></h2>
+                    <p>Some of my recent and best works</p>
+                </div>
+
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <img src="image/mekari.png" alt="Project 1" loading="lazy">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>Enterprise Approval System</h3>
+                            <div style="font-size: 0.9rem; margin-bottom: 15px;">
+                                <strong>(Pertamina Project)</strong>
+                                <ul style="padding-left: 1.5rem; margin-top: 0.5rem; list-style-type: disc;">
+                                    <li>Developed REST APIs using Laravel Lumen with microservices architecture</li>
+                                    <li>Implemented SLA (Service Level Agreement) logic for approval workflows</li>
+                                    <li>Integrated multiple backend services to support complex business processes</li>
+                                    <li>Improved system scalability and maintainability</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span>Laravel</span>
+                                <span>Microservices</span>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <img src="image/temuide.png" alt="image/temuide.png" loading="lazy">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>TemuIde CMS Platform</h3>
+                            <p>Backend system built using NestJS and TypeScript. Features a modular and reusable
+                                architecture with role-based access control (RBAC).</p>
+                            <div class="project-tech">
+                                <span>NestJS</span>
+                                <span>TypeScript</span>
+                                <span>MariaDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <img src="image/matahati.png" alt="Project 2" loading="lazy">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>Blind Learning App</h3>
+                            <p>Accessible mobile app developed using Flutter. Integrated with TalkBack for visually
+                                impaired users, featuring learning modules, payments, and tracking.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <img src="image/sadata.jpg" alt="image/temuide.png" loading="lazy">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>Sadata</h3>
+                            <p>The SADATA application is an HRMS application created by PT. Sada Technology was
+                                developed to overcome HR problems in managing retail employee data</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <img src="image/library.jpg" alt="image/temuide.png" loading="lazy">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>Library App</h3>
+                            <p>The Library Application is a user-friendly platform designed for book management. It
+                                features a comprehensive list of available books and detailed information for each book,
+                                including the title, author, genre, and publication details. Users can browse, search,
+                                and view book details with ease, making it a convenient tool for managing and exploring
+                                a library's collection.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <img src="image/social.jpg" alt="image/temuide.png" loading="lazy">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>Social App</h3>
+                            <p>StarPict is an innovative social media app that allows users to share, save, and interact
+                                with photos seamlessly. Built with Flutter for a responsive UI and powered by a robust
+                                Golang backend, StarPict offers features such as following profiles, liking posts,
+                                commenting, and saving favorite photos. The app is designed to provide users with a
+                                smooth and interactive experience for sharing their visual moments.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Golang</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <img src="image/rt.jpg" alt="image/temuide.png" loading="lazy">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>Digital Population Information System</h3>
+                            <p>RW Digital is a digital resident application designed to provide detailed information
+                                about residents and their addresses within a community. This platform allows for
+                                efficient tracking and management of resident data, making it easier for community
+                                administrators to access and update information. With a user-friendly interface, RW
+                                Digital simplifies the process of managing resident details, enhancing communication and
+                                organization within local neighborhoods.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass reveal">
+                        <div class="project-img">
+                            <img src="image/finance.jpg" alt="image/temuide.png" loading="lazy">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>Finance consolidation</h3>
+                            <p>The Finance Consolidation website, built with ASP.NET and Kendo UI, simplifies financial
+                                reporting and data management. It features monthly report generation and user-friendly
+                                input forms, enabling users to easily consolidate and analyze financial data. With an
+                                intuitive interface, the platform supports efficient budgeting, forecasting, and
+                                performance tracking, making it a valuable tool for financial management.</p>
+                            <div class="project-tech">
+                                <span>ASP.NET</span>
+                                <span>Kendo UI</span>
+                                <span>SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Optional) -->
+        <section id="services" class="services section-padding">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>My <span class="accent">Services</span></h2>
+                    <p>What I can do for you</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card glass reveal">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive, fast, and accessible websites tailored to your specific needs.</p>
+                    </div>
+                    <div class="service-card glass reveal">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile Development</h3>
+                        <p>Creating cross-platform mobile applications for iOS and Android devices.</p>
+                    </div>
+                    <div class="service-card glass reveal">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>UI/UX Integration</h3>
+                        <p>Translating beautiful designs into pixel-perfect, interactive user interfaces.</p>
+                    </div>
+                    <div class="service-card glass reveal">
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <h3>API Development</h3>
+                        <p>Designing robust and secure RESTful APIs to connect your frontend with data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding bg-alt">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Get In <span class="accent">Touch</span></h2>
+                    <p>Have a project in mind? Let's discuss it.</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info reveal">
+                        <div class="info-item glass">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>kmlalgh@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item glass">
+                            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>089699773627</p>
+                            </div>
+                        </div>
+                        <div class="info-item glass">
+                            <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>Kemal Al Ghifari</p>
+                            </div>
+                        </div>
+                        <div class="info-item glass">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Depok, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass reveal">
+                        <form id="contact-form" class="contact-form">
+                            <div class="input-group">
+                                <div class="input-field">
+                                    <input type="text" id="name" placeholder="Your Name" required>
+                                    <span class="error-msg">Name is required</span>
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" id="email" placeholder="Your Email" required>
+                                    <span class="error-msg">Valid email is required</span>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="subject" placeholder="Subject" required>
+                                <span class="error-msg">Subject is required</span>
+                            </div>
+                            <div class="input-field">
+                                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                                <span class="error-msg">Message is required</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary ripple-btn w-100">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">Portfo<span>lio.</span></a>
+                <p>Building digital experiences that matter.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kemal Al Ghifari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Floating Social Media -->
+    <div class="floating-social">
+        <a href="https://wa.me/6289699773627" class="fab fa-whatsapp" title="WhatsApp" target="_blank"></a>
+        <a href="mailto:kmlalgh@gmail.com" class="fas fa-envelope" title="Email"></a>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="project-modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="project-modal-body" id="projectModalBody">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
